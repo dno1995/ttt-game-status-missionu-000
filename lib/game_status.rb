@@ -21,5 +21,5 @@ def won?(board)
 end
 
 def full?(board)
-  board.all?{|index| index.all? position_taken?(board, index)}
+  board.all?{|spot| spot.none? spot == " "}
 end
