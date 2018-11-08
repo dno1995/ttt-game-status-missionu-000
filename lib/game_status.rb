@@ -31,3 +31,8 @@ end
 def over?(board)
   !won?(board).nil? || draw?(board) == true
 end
+
+def winner(board)
+  win_combination = won?(board)
+  board[win_combination[0]]
+end
